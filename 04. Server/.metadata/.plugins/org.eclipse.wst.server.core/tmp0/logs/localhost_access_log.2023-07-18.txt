@@ -271,3 +271,6 @@
 0:0:0:0:0:0:0:1 - - [18/Jul/2023:16:24:28 +0900] "POST /JSP/ex11randomResult.jsp HTTP/1.1" 200 419
 0:0:0:0:0:0:0:1 - - [18/Jul/2023:16:50:15 +0900] "GET /JSP/ex12redirect.jsp HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [18/Jul/2023:16:50:43 +0900] "GET /JSP/ex12redirect.jsp HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [18/Jul/2023:17:05:40 +0900] "GET /JSP/ex13moveURL.jsp HTTP/1.1" 200 373
+0:0:0:0:0:0:0:1 - - [18/Jul/2023:19:30:18 +0900] "GET /JSP/ex13moveURL.jsp HTTP/1.1" 200 373
+0:0:0:0:0:0:0:1 - - [18/Jul/2023:19:30:22 +0900] "POST /JSP/ex13moveResult.jsp HTTP/1.1" 302 -
