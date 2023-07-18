@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<div id="result-area"></div>
+	<button id="req-btn">데이터요청</button>
+	
+	<script src="./js/jquery-3.7.0.js">
+	
+		// 버튼을 클릭했을 때 동작하는 이벤트 구현
+		// + $.ajax() 함수 구현
+		// 구조만 구현해보세요!
+		$("#req-btn").on("click", function(){
+			$.ajax({
+				//url:"ajax?data=1234&data2=Hello",
+ 				url:"ajax",
+ 				data:{data:1234, data2:"Hello"},  // ajax?data=1234&data2=Hello 이렇게 써도 됨.
+ 				success:function(res){
+ 					console.log("요청성공!");
+ 					console.log("응답 받은 데이터:", res);
+ 					
+ 					// 응답받은 데이터가 JSON 형식의 문자열데이터인 경우
+ 					// JSON.parse()를 이용해서 객체로 변환해줘야 한다!
+ 					let obj = JSON.parse(res);
+ 					console.log(obj);
+ 				},
+ 				error:function(){
+ 					alert("요청실패...");
+ 				}
+ 				
+ 			}); //end ajax
+ 			
+ 		}); // end event
+	
+	
+	
+	</script>
+
+</body>
+</html>

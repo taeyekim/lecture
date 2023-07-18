@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+      <!-- 
+      data를 전송하기 위한 방법은 총 2가지가 존재한다
+      Do Get방식, Do Post방식
+       -->
+      <!-- Get방식으로 데이터 전달하기 -->
+      <!--
+      	전송하고 싶은곳URL?name=value
+      	ex06GetPost?get=47&name=value (1024byte까지만 넣을 수 있음.)
+      	QueryString방식 = Get방식 (보안에 취약함)
+       -->
+      <fieldset>
+         <legend>Get방식</legend>
+         <form action="Ex06GetPost" >
+          ID : <input type="text" name="get">
+          PW : <input type="text" name="text">
+            <input type="submit">
+         
+         </form>
+      </fieldset>
+      
+      <!-- Post방식으로 데이터 전달하기 -->
+      <!--
+      	
+       -->
+      <fieldset>
+         <legend>Post방식</legend>
+         <form action="Ex06GetPost" method="post" >
+          	ID : <input type="text" name="post"><br>
+          	PW : <input type="text" name="text">
+         <input type="submit">
+         
+         </form>
+      </fieldset>
+</body>
+</html>

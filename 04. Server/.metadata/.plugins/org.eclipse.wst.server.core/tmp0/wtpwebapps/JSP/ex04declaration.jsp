@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<%--
+		선언문
+		- JSP 안에서 필드(전역 변수, 멤버 밸류, 멤버 변수) 또는 메소드를 만들고 싶을 때 사용
+	 --%>
+
+
+	<%!
+		// 선언문 : 변수 + 메소드 선언
+		public String name = "박병관"; // 필드 <- 전역변수임.
+		public int plus(int num1, int num2){
+			return num1 + num2;
+		}
+	%>
+
+
+	<%
+		// 스크립트릿 : 자바 코드 기술
+		String name2 = "조준용"; //지역변수는 접근제한자 달 수 없음. 메소드 못 만듦.
+	%>
+	
+			
+	<%= 
+		// 표현식 : 계산식이나 함수를 호출한 결과를 '문자열' 형태로 출력.
+		plus(30, 40)
+	%>
+</body>
+</html>

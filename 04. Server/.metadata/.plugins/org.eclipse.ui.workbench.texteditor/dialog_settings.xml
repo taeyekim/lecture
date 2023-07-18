@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="&lt;legend&gt;학점확인프로그램&lt;/legend&gt;"/>
+		<list key="findhistory">
+			<item value="&lt;legend&gt;학점확인프로그램&lt;/legend&gt;"/>
+		</list>
+	</section>
+</section>

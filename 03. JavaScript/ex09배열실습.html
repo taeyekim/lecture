@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 실습문제) 10개의 랜덤숫자를 저장하는 배열을 만든 후, 짝수의 개수를 출력해보기
+        // 결과형태) arr에 저장된 짝수는 0,0,0,0,0 이고 총 0개입니다.
+        // 1, 10개의 랜덤 숫자를 가진 배열 생성하기
+        // 2. 반복문을 활용하여 짝수 판단하기
+        // 3. 짝수인 경우 카운팅하기
+        let arr = [];
+        let arr2 = [];
+        for (let i = 0; i < 10; i++){
+            arr[i] = parseInt((Math.random()*10) + 1);
+        }
+        for (let i = 0; i < arr.length; i++){
+            if (arr[i] % 2 == 0){
+                arr2.push(arr[i]);
+            }
+        }
+        console.log(`arr에 저장된 짝수는 ${arr2}이고 총 ${arr2.length}개입니다.`);
+        
+    </script>
+</body>
+</html>

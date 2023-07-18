@@ -1,0 +1,35 @@
+<%@page import="java.io.PrintWriter"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+   div, h2, fieldset, input{
+      margin: auto;
+      text-align: center;
+      margin-top: 10px;
+   }
+</style>
+</head>
+<body>
+<%
+	request.setCharacterEncoding("EUC-KR");
+	String[] items = request.getParameterValues("item");
+	PrintWriter out = response.getWriter();
+	int r = Integer.parseInt(Math.random() * items.length);
+%>
+   <h2>랜덤당첨게임</h2>
+   <fieldset>
+         <legend>랜덤당첨 작성</legend>
+         <%-- 주제를 출력하고, 아이템 중 하나를 랜덤으로 선택해서 출력 --%>
+         <% 
+         	out.print("오늘 점심 메뉴는?<br>");
+         	out.print(items[r]);
+         %>
+         
+   </fieldset>
+</body>
+</html>

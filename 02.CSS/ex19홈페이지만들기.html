@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0px; /* body 태그의 여백 삭제 */
+            margin: 0px;
+        }
+        #wrap{
+            width: 100%;
+            height: 1000px;
+            background-color: aliceblue;
+        }
+        #header{
+            width:100%; /* 부모 태그의 높이가 정해져 있어서 무제한인 body 태그의 높이 1000px로 고정 후 %로 분할 가능 */
+            height:20%;
+            background-color: bisque;
+        }
+        #container{
+            width: 80%;
+            height: 70%;
+            background-color: orange;
+            float:left;
+        }
+        #nav{
+            width: 20%;
+            height: 70%;
+            background-color: green;
+            float:left;
+        }
+        #footer{
+            width: 100%;
+            height: 20%;
+            background-color: red;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap"><!-- header, container, footer 순-->
+        <div id="header"></div>
+        <div id="container"></div>
+        <div id="nav"></div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
